@@ -1,0 +1,14 @@
+table.schemaName = "MYSCHEMA";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "ID"; sqlType = SMALLINT; nullable = false;},
+	{name = "MARCA"; sqlType = NVARCHAR; length = 20; nullable = false;},
+	{name = "MODELLO"; sqlType = NVARCHAR; length = 20; nullable = false;},
+	{name = "DATA"; sqlType = DATE; nullable = false;},
+	{name = "COLORE"; sqlType = NVARCHAR; length = 20;},
+	{name = "PESO"; sqlType = NVARCHAR; length = 10;},
+	{name = "PREZZO"; sqlType = NVARCHAR; length = 10;},
+	{name = "DIMENSIONESCHERMO"; sqlType = NVARCHAR; length = 10;}
+ ];
+table.primaryKey.pkcolumns = ["ID"];
